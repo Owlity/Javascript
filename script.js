@@ -1,28 +1,4 @@
 
-
-function terningkast(){
-kast1= Math.ceil(Math.random()*6)
-return kast1
-}
-function nultilhundre(){
-    sum = 0
-    antalkast = 0
-    while(sum<=40){
-    kast = terningkast()
-    antalkast+=1
-    if (kast == 1){
-        sum=0
-        console.log("kastnr. ", antalkast, "Du kastet 1 og starter på nytt")
-    }
-    else{
-        sum+= kast
-        console.log("kastnr. ", antalkast, " ga terningkast", kast, " og summen blir ", sum)
-    }
-}
-
-console.log("gratulerer du vant med ", antalkast, "kast")
-}
-nultilhundre()
 // sum = 0
 
 // function terning(T1) {
@@ -48,3 +24,49 @@ nultilhundre()
 //     }
     
 // terning()
+let frukt = ["eple", "pære", "banan", "kiwi"]
+// const readline = require("readline");
+// const rl = readline.createinterface({
+//     input: ProcessingInstruction.stdin,
+//     output: ProcessingInstruction.stdout
+// })
+
+// rl.question("Skriv inn indexnummer fra liste(0 til 4)",(svar) =>{
+//     if (svar == "0"){
+//         console.log(frukt[0])
+//     }
+//     if (svar =="1"){
+//         console.log(frukt[0])
+
+// }
+
+// }
+// console.log(frukt[0]);
+// frukt.push("pære")
+// console.log(frukt.length);
+// console.log(frukt[2])
+// frukt[2]= "fortnite";
+// console.log(frukt[2])
+// let nummer = 1
+// let handleliste = ["melk", "brød", "ost", "egg"];
+// for (let vare of handleliste) {
+
+
+// console.log(nummer, vare);
+// nummer += 1
+// }
+let ov
+let sum = 0
+let temperaturer = [12, 14, 11, 9, 15, 17, 13];  
+for (let temperatur of temperaturer) {
+
+sum = sum + temperatur;
+console.log(sum);
+avg = sum / temperaturer.length
+console.log(avg)
+
+if (temperatur[i] > 13){
+    ov +=1
+}
+console.log (ov)
+}
