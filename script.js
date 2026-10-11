@@ -197,49 +197,4 @@
     
 // }
 // else {
-//     console.log("ikke bestått");
-    
-// }
-// }
-
-
-let elever = [
-
-{ navn: "Ali", poeng: 67 },
-
-{ navn: "Nora", poeng: 89 },
-
-{ navn: "Sofie", poeng: 42 },
-
-{ navn: "hery", poeng: 32 },
-
-{ navn: "louis", poeng: 33 }
-
-];
-sum = 0;
-pass = 0;
-best = elever[0]
-
-for (let elev of elever) {
-
-console.log(elev.navn + " fikk " + elev.poeng + " poeng");
-if (elev.poeng > 50){
-    console.log("bestått");
-    pass += 1
-    
-}
-else {
-    console.log("ikke bestått");
-    
-}
-
-if (elev.poeng > best.poeng) {
-    best = elev;
-  }
-}
-let gjennomsnitt = sum / elever.length;
-console.log("Gjennomsnittlig poengsum: " + gjennomsnitt);
-console.log("Eleven med høyest poengsum: " + best.navn);
-
-console.log("Antall som har bestått: " + pass);
 
