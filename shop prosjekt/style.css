@@ -145,3 +145,11 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
+h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding:2vw;
+  font-style: italic;
+  text-decoration:underline;
+}
