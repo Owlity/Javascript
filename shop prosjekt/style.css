@@ -8,7 +8,9 @@ body {
   display: flex;
   flex-direction: row-reverse;
 
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: bold;
   color: #4e4d4d;
 
 }
@@ -42,9 +44,9 @@ body {
   /* styling for the font, hitbox, and general size of the navbar*/
 
   border-color: #e8bd72;
-  ;
+ 
   border-style: solid;
-  ;
+ 
   /* creates an outline */
   transition: border 0.5s ease-in-out;
   /* Create a smooth hover transition */
@@ -52,7 +54,6 @@ body {
 
 .Navbar ul li a:hover {
   border-color: #b88429;
-  ;
 }
 
 /* creates a nice transition */
@@ -64,12 +65,6 @@ body {
 }
 
 .Navbar ul li:nth-child(2) a {
-  border-radius: 0px;
-  border-left: 0px;
-  border-right: 0px;
-}
-
-.Navbar ul li:nth-child(3) a {
   border-radius: 0px;
   border-left: 0px;
   border-right: 0px;
@@ -99,6 +94,8 @@ body {
   font-size: 2vh;
   padding: 4vh;
   margin-top: 4vh;
+  border-top-left-radius: 8vh;
+  border-top-right-radius: 8vh;
 }
 
 
@@ -145,11 +142,14 @@ body {
   opacity: 0.8;
   cursor: pointer;
 }
+
 h1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: center;
-  padding:2vw;
-  font-style: italic;
-  text-decoration:underline;
+  padding: 2vw;
+}
+
+#logo {
+  width: 8rem;
 }
