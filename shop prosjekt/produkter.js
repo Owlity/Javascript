@@ -30,4 +30,6 @@ const produkter = [
         bilde:"images/lasagne.jpg"
     }
 ]
+
 let handlekurv = [];
+
