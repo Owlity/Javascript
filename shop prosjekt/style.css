@@ -155,3 +155,42 @@ h1 {
 #logo {
   width: 8rem;
 }
+.popup {
+
+display: none;
+
+position: fixed;
+
+inset: 0;
+
+background-color: rgba(0, 0, 0, 0.8);
+
+justify-content: center;
+
+align-items: center;
+
+}
+
+#popupIMG {
+
+max-width: 90%;
+
+max-height: 90vh;
+
+}
+
+.close {
+
+position: absolute;
+
+top: 20px;
+
+right: 30px;
+
+color: white;
+
+font-size: 40px;
+
+cursor: pointer;
+
+}
