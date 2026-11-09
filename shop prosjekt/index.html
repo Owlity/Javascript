@@ -18,7 +18,7 @@
                 <!-- Here I used ul li because it is the standard bullet point format. The first line of code is the "first child" -->
                 <li class="nav_1"><a href="index.html">our foods</a></li>
                 <li class="nav_2"><a href="about_us.html">About us</a></li>
-                <li class="nav_2"><a href="list.html">shopping list</a></li>
+                <li class="nav_2"><a href="shopping_list.html">shopping list</a></li>
             </ul>
         </div>
     </div>
@@ -28,15 +28,15 @@
 
     <div class="container">
 
-        <div ><img class="ContIMG" id="p1" src="images/lasagne.jpg" alt="lasagne"></div>
+        <div><img class="ContIMG" id="lasagne" src="images/lasagne.jpg" alt="lasagne"></div>
 
-        <div ><img class="ContIMG" src="images/pesto.jpg" alt="pesto"></div>
+        <div><img class="ContIMG" src="images/pesto.jpg" alt="pesto"></div>
 
-        <div ><img class="ContIMG" src="images/pizza.jpg" alt="pizza"></div>
+        <div><img class="ContIMG" src="images/pizza.jpg" alt="pizza"></div>
 
-        <div ><img class="ContIMG" src="images/salat.jpg" alt="salat"></div>
+        <div><img class="ContIMG" src="images/salat.jpg" alt="salat"></div>
 
-        <div ><img class="ContIMG" src="images/sopp.jpg" alt="sopp"></div>
+        <div><img class="ContIMG" src="images/sopp.jpg" alt="sopp"></div>
 
     </div>
 
@@ -53,11 +53,13 @@
     </div>
     <!-- footer -->
     <div id="popup" class="popup">
+        <div class="pp">
+            <span class="close">&times;</span>
 
-        <span class="close">&times;</span>
+            <img id="popupIMG" src="" alt="Forstørret bilde">
 
-        <img id="popupIMG" src="" alt="Forstørret bilde">
-
+            <button id="carterhere" onclick="add_item()">Add To Cart</button>
+        </div>
     </div>
     <script src="produkter.js">
 

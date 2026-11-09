@@ -76,3 +76,8 @@ document.addEventListener("keydown", (event) => {
     }
 
 });
+
+function add_item(item) {
+    handlekurv.push(item)
+    console.log(popupIMG.src)
+}
