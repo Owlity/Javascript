@@ -1,6 +1,5 @@
 body {
-  background-color: #fffd7a;
-  background-image: url(images/backround_yellowdot.webp);
+  background-color: #ffe6bb;
 
   padding: 2vh 12vh;
 }
@@ -46,9 +45,9 @@ body {
   /* styling for the font, hitbox, and general size of the navbar*/
 
   border-color: #e8bd72;
- 
+
   border-style: solid;
- 
+
   /* creates an outline */
   transition: border 0.5s ease-in-out;
   /* Create a smooth hover transition */
@@ -99,18 +98,18 @@ body {
   border-top-left-radius: 8vh;
   border-top-right-radius: 8vh;
   justify-content: center;
-    margin-top: auto;
+  margin-top: auto;
   flex-shrink: 0;
 }
 
-.boutus{
-  background-color:#ffd489; 
-text-align: center;
+.boutus {
+  background-color: #ffd489;
+  text-align: center;
   padding: 2vw;
   margin: 12vh;
-  border-radius:4vh;
+  border-radius: 4vh;
 }
-`
+
 .contact_me {
   display: flex;
   flex-direction: column;
@@ -149,12 +148,12 @@ text-align: center;
   height: 100%;
   object-fit: contain;
   transition: 300ms;
-  }
+}
 
 .ContIMG:hover {
   opacity: 0.8;
   cursor: pointer;
-  
+
 }
 
 h1 {
@@ -167,57 +166,103 @@ h1 {
 #logo {
   width: 8rem;
 }
+
 .popup {
 
-display: none;
+  display: none;
 
-position: fixed;
+  position: fixed;
 
-inset: 0;
+  inset: 0;
 
-background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 
-justify-content: center;
+  justify-content: center;
 
-align-items: center;
+  align-items: center;
 
 }
 
 #popupIMG {
 
-max-width: 50%;
+  max-width: 50%;
 
-max-height: 50vh;
+  max-height: 50vh;
 
 }
 
 .close {
 
-position: absolute;
+  position: absolute;
 
-top: 20px;
+  top: 20px;
 
-right: 30px;
+  right: 30px;
 
-color: white;
+  color: white;
 
-font-size: 40px;
+  font-size: 40px;
 
-cursor: pointer;
+  cursor: pointer;
 
 }
+
 .popup {
   display: flex;
   flex-direction: column;
 
 }
+
+.popup {
+
+  display: none;
+
+
+
+  position: fixed;
+
+  inset: 0;
+
+
+
+  background-color: rgba(0, 0, 0, 0.7);
+
+
+
+  justify-content: center;
+
+  align-items: center;
+
+}
+
+
+
+.kurvInnhold {
+
+  background-color: white;
+
+  padding: 25px;
+
+  width: 400px;
+
+  max-width: 90%;
+
+
+
+  border-radius: 10px;
+
+}
+
+
+
 .pp {
   background-color: #ffd489;
   border-radius: 5vh;
   padding: 2%
-  }
+}
+
 #carterhere {
-  background-color:#e8bd72;
+  background-color: #e8bd72;
   border: none;
   color: rgb(0, 0, 0);
   padding: 15px 32px;
@@ -230,6 +275,7 @@ cursor: pointer;
   border-radius: 4vh;
   transition: 200ms;
 }
+
 #carterhere:hover {
-  background-color:#b88429;
+  background-color: #b88429;
 }

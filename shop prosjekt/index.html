@@ -8,63 +8,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <div class="b">
-<body>
 
-    <div class="Navbar">
-        <img id="logo" src="images/logo.png" alt="logo">
+    <body>
 
-        <div class="Navbar_text">
-            <ul>
-                <!-- Here I used ul li because it is the standard bullet point format. The first line of code is the "first child" -->
-                <li class="nav_1"><a href="index.html">our foods</a></li>
-                <li class="nav_2"><a href="about_us.html">About us</a></li>
-                <li class="nav_2"><a href="shopping_list.html">shopping list</a></li>
-            </ul>
+        <div class="Navbar">
+            <img id="logo" src="images/logo.png" alt="logo">
+
+            <div class="Navbar_text">
+                <ul>
+                    <!-- Here I used ul li because it is the standard bullet point format. The first line of code is the "first child" -->
+                    <li class="nav_1"><a href="index.html">our foods</a></li>
+                    <li class="nav_2"><a href="about_us.html">About us</a></li>
+                    <li class="nav_2"><a href="shopping_list.html">shopping list</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
 
-    <h1>MENU</h1>
+        <h1>MENU</h1>
 
-    <div class="container">
+        <div class="container">
 
-        <div><img class="ContIMG" id="lasagne" src="images/lasagne.jpg" alt="lasagne"></div>
+            <div><img class="ContIMG" id="lasagne" src="images/lasagne.jpg" alt="lasagne"></div>
+            
+            <div><img class="ContIMG" src="images/pesto.jpg" alt="pesto"></div>
 
-        <div><img class="ContIMG" src="images/pesto.jpg" alt="pesto"></div>
+            <div><img class="ContIMG" src="images/pizza.jpg" alt="pizza"></div>
 
-        <div><img class="ContIMG" src="images/pizza.jpg" alt="pizza"></div>
+            <div><img class="ContIMG" src="images/salat.jpg" alt="salat"></div>
 
-        <div><img class="ContIMG" src="images/salat.jpg" alt="salat"></div>
+            <div><img class="ContIMG" src="images/sopp.jpg" alt="sopp"></div>
 
-        <div><img class="ContIMG" src="images/sopp.jpg" alt="sopp"></div>
-
-    </div>
-
-    <div class="footer">
-        <img src="Images/Logo.svg" class="burger" alt="">
-        <div class="contact_mus">
-            <p>Contact me:</p>
-            <ul>
-
-                <li>E-mail: kjøkken@gmail.com</li>
-                <li>tlf: 46 13 27 20 </li>
-            </ul>
         </div>
-    </div>
-    <!-- footer -->
-    <div id="popup" class="popup">
-        <div class="pp">
-            <span class="close">&times;</span>
 
-            <img id="popupIMG" src="" alt="Forstørret bilde">
+        <div class="footer">
+            <img src="Images/Logo.svg" class="burger" alt="">
+            <div class="contact_mus">
+                <p>Contact me:</p>
+                <ul>
 
-            <button id="carterhere" onclick="add_item()">Add To Cart</button>
+                    <li>E-mail: kjøkken@gmail.com</li>
+                    <li>tlf: 46 13 27 20 </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <script src="produkter.js">
+        <!-- footer -->
+        <div id="popup" class="popup">
+                <span class="close">&times;</span>
 
-    </script>
-</body>
+                <!-- <img id="popupIMG" src="" alt="Forstørret bilde"> -->
+
+                <div class="produktkort">
+
+                    <img id="popupIMG" src="${produkt.bilde}" alt="${produkt.navn}">
+
+                    <h2>${produkt.navn}</h2>
+
+                    <p>${produkt.pris} kr</p>
+                    <button id="carterhere" class="kjopKnapp" data-id="${produkt.id}">
+
+                        Legg i handlekurv
+
+                    </button>
+
+                </div>
+                <button class="kjopKnapp" data-id="${produkt.id}"> Legg i handlekurv </button>
+                    <!-- <button id="carterhere" onclick="add_item()">Add To Cart</button> -->
+            </div>
+        </div>
+        <script src="produkter.js">
+
+        </script>
+    </body>
 </div>
 
 </html>

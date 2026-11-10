@@ -31,6 +31,15 @@ const produkter = [
     }
 ]
 
+knapp.addEventListener("click", () => { 
+ 
+    let id = Number(knapp.dataset.id); 
+ 
+    console.log("Produkt-id:", id); 
+ 
+}); 
+
+
 let handlekurv = [];
 
 const popup = document.getElementById("popup");
@@ -81,3 +90,73 @@ function add_item(item) {
     handlekurv.push(item)
     console.log(popupIMG.src)
 }
+
+document.querySelectorAll(".kjopKnapp").forEach(knapp => {  
+
+knapp.addEventListener("click", () => {   
+ 
+    console.l ;("Knappen ble trykket!");   
+ 
+});   
+
+});  
+
+
+let valgtProdukt = produkter.find( 
+
+ produkt => produkt.id === id 
+
+);
+console.log("Du valgte:", valgtProdukt);
+
+function oppdaterAntall() { 
+
+ 
+
+    document.getElementById("antallKurv").textContent = 
+
+        handlekurv.length; 
+
+ 
+
+}
+
+for (let produkt of handlekurv) { 
+
+ 
+
+    liste.innerHTML += ` 
+
+        <p> 
+
+            ${produkt.navn} - ${produkt.pris} kr 
+
+        </p> 
+
+    `; 
+
+ 
+
+} 
+kurvKnapp.addEventListener("click", () => { 
+
+ 
+
+    visHandlekurv(); 
+
+ 
+
+    kurvPopup.style.display = "flex"; 
+
+ 
+
+});
+lukkKurv.addEventListener("click", () => { 
+
+ 
+
+    kurvPopup.style.display = "none"; 
+
+ 
+
+});
